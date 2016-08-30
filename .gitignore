@@ -1,0 +1,45 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+#*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# My own
+main
+code/glog_test/log
+code/msgpack_learn/class
+code/msgpack_learn/main
+code/multi_learn/main
+code/mysql_learn/framework
+code/redis_learn/redis
+code/socket_learn/client
+code/socket_learn/server
+code/trim_test/trim
+
