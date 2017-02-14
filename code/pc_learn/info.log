@@ -1,0 +1,13 @@
+item = 10000, thread = 5
+producer: thread[140619406296832] created, threadcount[0] = 0
+producer: thread[140619397904128] created, threadcount[1] = 0
+producer: thread[140619389511424] created, threadcount[2] = 0
+producer: thread[140619381118720] created, threadcount[3] = 0
+producer: thread[140619372726016] created, threadcount[4] = 0
+producer: thread[140619406296832] done, threadcount[0] = 0
+producer: thread[140619397904128] done, threadcount[1] = 0
+producer: thread[140619389511424] done, threadcount[2] = 0
+producer: thread[140619381118720] done, threadcount[3] = 0
+producer: thread[140619372726016] done, threadcount[4] = 10000
+consumer: thread[140619372726016] created
+consumer: thread[140619372726016] done

@@ -1,0 +1,21 @@
+EXE=main
+CC=gcc
+SRCS=$(wildcard *.c) #如果看不懂，自行google
+OBJS=$(SRCS:.c=.o)
+CFLAGS=-g
+
+.PHONY: all
+all: $(EXE)
+#all: $(EXE) .depend #这种写法没有意义。详见“include调用方式&Makefile执行过程”
+
+.depend: $(SRCS) 
+	@$(CC) -MM $(SRCS) > .depend
+	
+-include .depend #和其它版本 make 兼容的相关命令是 sinclude
+
+$(EXE): $(OBJS)
+	$(CC) $^ -o $@
+
+.PHONY: clean	
+clean:
+	rm $(EXE) $(OBJS) .depend -f

@@ -1,0 +1,4 @@
+abc.o: abc.c abc.h
+main.o: main.c abc.h xyz.h
+xyz.o: xyz.c xyz.h
+	@echo test

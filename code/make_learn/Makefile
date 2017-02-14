@@ -1,0 +1,5 @@
+CPPFLAGS+=-I./
+LDFLAGS+=-L ../
+CFLAGS+=-g
+CXXFLAGS+=--std=c++11
+

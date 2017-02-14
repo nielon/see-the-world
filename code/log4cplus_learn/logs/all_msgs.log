@@ -1,0 +1,7 @@
+09/01/16 08:11:45 [140603301857088] TRACE log %% - ENTER: ::printDebug() [config.cpp:15]
+09/01/16 08:11:45 [140603301857088] DEBUG log %% - This is a DEBUG message [config.cpp:16]
+09/01/16 08:11:45 [140603301857088] INFO  log %% - This is a INFO message [config.cpp:17]
+09/01/16 08:11:45 [140603301857088] WARN  log %% - This is a WARN message [config.cpp:18]
+09/01/16 08:11:45 [140603301857088] ERROR log %% - This is a ERROR message [config.cpp:19]
+09/01/16 08:11:45 [140603301857088] FATAL log %% - This is a FATAL message [config.cpp:20]
+09/01/16 08:11:45 [140603301857088] TRACE log %% - EXIT:  ::printDebug() [config.cpp:15]

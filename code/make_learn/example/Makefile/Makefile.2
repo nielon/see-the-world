@@ -1,0 +1,15 @@
+EXE=main
+CC=gcc
+OBJS=main.o abc.o xyz.o
+CFLAGS=-g
+
+$(EXE): $(OBJS)
+	$(CC) $^ -o $@
+
+main.o: abc.h xyz.h
+abc.o: abc.h
+xyz.o: xyz.h
+
+.PHONY: clean	
+clean:
+	rm $(EXE) $(OBJS) -f

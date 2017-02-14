@@ -1,0 +1,15 @@
+main: main.o abc.o xyz.o
+	gcc main.o abc.o xyz.o -o main
+	
+main.o: main.c abc.h xyz.h
+	gcc -c main.c -o main.o -g
+	
+abc.o: abc.c abc.h
+	gcc -c abc.c -o abc.o -g
+	
+xyz.o: xyz.c xyz.h
+	gcc -c xyz.c -o xyz.o -g
+
+.PHONY: clean	
+clean:
+	rm main main.o abc.o xyz.o -f

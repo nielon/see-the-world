@@ -1,0 +1,17 @@
+g++ -std=c++11    test.cpp   -o test
+test.cpp: In function ‘int main()’:
+test.cpp:12:61: error: no matching function for call to ‘remove_if(std::basic_string<char>::iterator, std::basic_string<char>::iterator, <unresolved overloaded function type>)’
+   auto itor = remove_if(str.begin(), str.end(), std::isspace);
+                                                             ^
+test.cpp:12:61: note: candidate is:
+In file included from /usr/include/c++/4.9/algorithm:62:0,
+                 from test.cpp:3:
+/usr/include/c++/4.9/bits/stl_algo.h:926:5: note: template<class _FIter, class _Predicate> _FIter std::remove_if(_FIter, _FIter, _Predicate)
+     remove_if(_ForwardIterator __first, _ForwardIterator __last,
+     ^
+/usr/include/c++/4.9/bits/stl_algo.h:926:5: note:   template argument deduction/substitution failed:
+test.cpp:12:61: note:   couldn't deduce template parameter ‘_Predicate’
+   auto itor = remove_if(str.begin(), str.end(), std::isspace);
+                                                             ^
+<builtin>: recipe for target 'test' failed
+make: *** [test] Error 1

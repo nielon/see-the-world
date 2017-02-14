@@ -1,0 +1,23 @@
+EXE=main
+CC=gcc
+SRCS=$(wildcard *.c)
+OBJS=$(SRCS:.c=.o)
+DEPS=$(patsubst %.c,%.d,$(SRCS))
+CFLAGS=-g
+
+$(EXE): $(OBJS)
+	$(CC) $^ -o $@
+	
+$(DEPS):$(SRCS)
+#%.d: %.c #对于 &< ,这两种写法都可以吗？
+	@set -e;\
+	rm -f $@;\
+	$(CC) -MM $< > $@.;\
+	sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@. > $@; \
+    rm -f $@.
+ 
+sinclude $(DEPS)
+
+.PHONY: clean	
+clean:
+	rm $(EXE) $(OBJS) $(DEPS) -f
