@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vimer/see-the-world/code/cmake_learn/Demo1/print/func.cpp
+func.h
+/home/vimer/see-the-world/code/cmake_learn/Demo1/print/func.h
+iostream
+-
+
+/home/vimer/see-the-world/code/cmake_learn/Demo1/print/func.h
+string
+-
+
