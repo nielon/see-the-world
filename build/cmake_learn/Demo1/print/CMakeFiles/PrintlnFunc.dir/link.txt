@@ -1,2 +1,0 @@
-/usr/bin/ar cr libPrintlnFunc.a  CMakeFiles/PrintlnFunc.dir/func.cpp.o
-/usr/bin/ranlib libPrintlnFunc.a
