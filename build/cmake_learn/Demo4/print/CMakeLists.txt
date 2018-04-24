@@ -10,8 +10,10 @@ message(STATUS "@2 FOO_BUILD_SHARED=${FOO_BUILD_SHARED}")
 if(FOO_BUILD_SHARED)
 	add_library(PrintlnFunc SHARED
 		${LIB_SOURCES})
+	INSTALL(TARGETS PrintlnFunc DESTINATION bin)
 else()
 	add_library(PrintlnFunc STATIC
 		${LIB_SOURCES})
+	INSTALL(TARGETS PrintlnFunc DESTINATION lib)
 endif()
 

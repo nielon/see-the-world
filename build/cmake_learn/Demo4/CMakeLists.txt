@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 # 项目信息
 project(Demo4)
 
+set(CMAKE_INSTALL_PREFIX "./install")
 # 加入一个配置头文件，用于处理 cmake 对源码的设置
 configure_file(
 	"${PROJECT_SOURCE_DIR}/config.h.in"
@@ -39,3 +40,4 @@ add_executable(Demo ${SOURCES})
 
 # 添加链接库
 target_link_libraries(Demo ${EXTRA_LIBS})
+install(TARGETS Demo DESTINATION bin)

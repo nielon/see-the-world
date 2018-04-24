@@ -24,5 +24,7 @@ cd build && cmake .. -D_USE_MY_PRINTLN_=ON -DFOO_BUILD_SHARED=ON
 ——本来以为很 easy 的操作，事实上也有坑。参考 [Overriding a default option(…) value in CMake from a parent CMakeLists.txt
 ][2]
 
+除了在 `cd build && cmake ..` 之后执行 `make && make install` 安装，也可以直接 `cd build && cmake .. && cmake --build . --target install`
+
 [1]:http://www.hahack.com/codes/cmake/#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9
 [2]:https://stackoverflow.com/questions/3766740/overriding-a-default-option-value-in-cmake-from-a-parent-cmakelists-txt
