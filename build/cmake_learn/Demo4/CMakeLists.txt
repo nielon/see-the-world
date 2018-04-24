@@ -21,6 +21,10 @@ option(_USE_MY_PRINTLN_
 # 是否加入 Println 库
 if(_USE_MY_PRINTLN_)
 	include_directories("${PROJECT_SOURCE_DIR}/print")
+	# useless
+	#set(FOO_BUILD_SHARED ON)
+	# useful
+	set(FOO_BUILD_SHARED ON CACHE BOOL "debug")
 	# 添加 print 子目录
 	add_subdirectory(print)
 	set(EXTRA_LIBS ${EXTRA_LIBS} PrintlnFunc)
