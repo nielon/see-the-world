@@ -40,4 +40,7 @@ add_executable(Demo ${SOURCES})
 
 # 添加链接库
 target_link_libraries(Demo ${EXTRA_LIBS})
+
+# 安装规则
 install(TARGETS Demo DESTINATION bin)
+install(FILES "${PROJECT_BINARY_DIR}/config.h" DESTINATION include)
