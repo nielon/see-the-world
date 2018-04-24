@@ -26,5 +26,14 @@ cd build && cmake .. -D_USE_MY_PRINTLN_=ON -DFOO_BUILD_SHARED=ON
 
 除了在 `cd build && cmake ..` 之后执行 `make && make install` 安装，也可以直接 `cd build && cmake .. && cmake --build . --target install`
 
+linux 怎么区分调试版、发布版呢？
+
+【有待解答】
+
+# TODO
+
+1. 在 windows 平台，动态库模式无法构建成功，缺少导入库
+2. msvc 区分调试版本、发布版本，调试版库文件增加 d 后缀
+
 [1]:http://www.hahack.com/codes/cmake/#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BC%96%E8%AF%91%E9%80%89%E9%A1%B9
 [2]:https://stackoverflow.com/questions/3766740/overriding-a-default-option-value-in-cmake-from-a-parent-cmakelists-txt
