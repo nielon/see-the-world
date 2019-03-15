@@ -51,3 +51,4 @@ log/glog_test/log/a.out.debian8light.vimer.log.INFO.20160815-150125.71868
 net/socket_learn/client
 net/socket_learn/server
 tmp.sh
+/build/cmake_learn/Demo4/msvc
